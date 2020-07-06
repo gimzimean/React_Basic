@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+
 class Subject extends Component {
   render() {
     return (
       <header>
-        <h1>Hello</h1>
-        Hello World
+        <h1>{this.props.title}</h1>
+        {this.props.sub}
       </header>
     );
   }

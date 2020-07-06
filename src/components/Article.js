@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-class Subject extends Component {
+
+class Article extends Component {
   render() {
     return (
-      <header>
-        <h1>Hello</h1>
-        Hello World
-      </header>
+      <article>
+        <h2>{this.props.title}</h2>
+        {this.props.desc}
+      </article>
     );
   }
 }
-export default Subject;
+
+export default Article;
